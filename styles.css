@@ -1,0 +1,41 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+.f-b {
+    font-weight: 700;
+}
+
+.f-sb {
+    font-weight: 600;
+}
+
+.f-m {
+    font-weight: 500;
+}
+
+.f-r {
+    font-weight: 400;
+}
+
+
+* {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
+
+body {}
+
+.flex {
+    display: flex;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
