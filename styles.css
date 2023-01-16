@@ -33,12 +33,33 @@
     margin-top: 50px;
 }
 
+.mb-50px {
+    margin-bottom: 50px;
+}
+
 .flex {
     display: flex;
 }
 
 .text-center {
     text-align: center;
+}
+
+/* font colors according to figma */
+.dark-01 {
+    color: #131313;
+}
+
+.dark-02 {
+    color: #424242;
+}
+
+.dark-03 {
+    color: #727272;
+}
+
+.orange {
+    color: #FF900E;
 }
 
 body {
@@ -50,6 +71,12 @@ body {
 /* styles for elements */
 a {
     text-decoration: none;
+}
+
+header {
+    height: fit-content;
+    flex-direction: column;
+    background-color: #ff8f0e1a;
 }
 
 h1 {
@@ -87,18 +114,18 @@ nav ul li a {
     line-height: 26px;
 }
 
-header {
+header div {
     flex-direction: column;
     align-items: center;
 }
 
-header h2 {
+header div h2 {
     width: 44.5%;
     font-size: 64px;
     margin: 100px 0 0 0;
 }
 
-header p {
+header div p {
     width: 45.20%;
     font-size: 16px;
     line-height: 26px;
@@ -116,10 +143,89 @@ header p {
 
 .banner-image img {
     max-width: 1440px;
-    width: 75%;
-    margin-left: 12.5%;
-    margin-right: 12.5%;
+    width: 100%;
 }
+
+/* main section */
+
+
+.feature-img {
+    display: grid;
+}
+
+
+
+main div {
+    max-width: 1318px;
+    align-items: center;
+}
+
+
+
+.feature-img {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-height: 708px;
+    max-width: 708px;
+    margin-left: 0;
+
+}
+
+.feature-img img {
+    max-height: 342px;
+    max-width: 342px;
+}
+
+.feature {
+    max-width: 537px;
+    flex-direction: column;
+    margin-left: 4%;
+}
+
+.feature h4 {
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 45px;
+}
+
+.feature p {
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.feature .button {
+    align-self: flex-start;
+}
+
+/* 
+.feature-title {
+    grid-area: feature-title;
+}
+
+.feature-title-text {
+    grid-area: feature-title-text;
+}
+
+.feature {
+    grid-area: feature;
+}
+
+.features-img {
+    grid-area: features-img;
+
+}
+
+.facts {
+    grid-area: facts;
+}
+
+.badge {
+    grid-area: badge;
+} */
+
+
 
 /* media queries */
 
@@ -153,14 +259,14 @@ header p {
         font-size: 25px;
     }
 
-    /* header banner section */
+    /* banner section */
 
-    header h2 {
+    div h2 {
         font-size: 50px;
         width: 70.5%;
     }
 
-    header p {
+    header div p {
         width: 85.20%;
     }
 
@@ -169,4 +275,16 @@ header p {
         margin-left: 1.5%;
         margin-right: 1.5%;
     }
+
+    /* feature image section */
+
+    main div {
+        flex-direction: column;
+    }
+
+    .feature-img {
+        grid-template-columns: repeat(1, 1fr);
+        max-height: 1500px;
+    }
+
 }
