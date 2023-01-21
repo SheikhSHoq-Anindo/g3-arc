@@ -317,7 +317,7 @@ main div {
 
 .badge:hover {
     animation-name: light-show;
-    animation-duration: .33s;
+    animation-duration: .39s;
     animation-iteration-count: infinite
 }
 
