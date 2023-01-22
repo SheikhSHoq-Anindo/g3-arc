@@ -447,13 +447,26 @@ footer div p {
 }
 
 .sub p {
-    font-size: 30px;
+    font-size: 16px;
+    overflow-wrap: normal;
+}
+
+.sub form {
+    margin-top: 15px;
 }
 
 #sub-input {
     height: 20px;
     width: 200px;
-    padding: 20px;
+    padding: 10px;
+    text-align: end;
+    font-size: 20px;
+}
+
+.sub div {
+    margin-top: 15px;
+    font-size: 20px;
+
 }
 
 .copy {
